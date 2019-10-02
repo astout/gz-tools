@@ -177,9 +177,16 @@
             </p>
             <ul>
               <li>CPUs Available: <span id="cpu-num">0</span></li>
+              <li>Threads Running: <span id="thread-num">0</span></li>
             </ul>
             <div class="thread-action row">
               <button id="thread-start" class="btn btn-info btn-lg">Start</button>
+              <button id="thread-inc" class="btn btn-info btn-lg disabled" data-toggle="tooltip" data-placement="top" title="increase thread count">
+                <i class="fas fa-arrow-circle-up"></i>
+              </button>
+              <button id="thread-dec" class="btn btn-info btn-lg disabled" data-toggle="tooltip" data-placement="top" title="decrease thread count">
+                <i class="fas fa-arrow-circle-down"></i>
+              </button>
               <button id="thread-stop" class="btn btn-danger btn-lg disabled">Stop</button>
             </div>
             <div id="loading-bar" class="progress d-none"> 
